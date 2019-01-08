@@ -24,7 +24,8 @@ fontawesome: yes
 phone: 801 380 6878
 address: Henry Schein One, 1220 S 630 E, American Fork, UT 84003
 urlcolor: blue
-#web: https://www.linkedin.com/in/tcpulsipher/
+#web: www.linkedin.com/in/tcpulsipher/
+linkedin: tcpulsipher
 ---
 
 ## Skills
