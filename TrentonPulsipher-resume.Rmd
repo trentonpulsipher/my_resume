@@ -28,7 +28,9 @@ web: https://www.linkedin.com/in/tcpulsipher/
 ---
 
 ## Skills
-* Machine Learning * Data Mining * Visualization * Statistics * Big Data * R * Tableau * SQL *
+
+Machine Learning | Data Mining | Visualization | Statistics | Big Data | R | Tableau | SQL
+
 
 ## Employment
 

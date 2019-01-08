@@ -1,0 +1,299 @@
+\documentclass[11pt,]{article}
+\usepackage[sc, osf]{mathpazo}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+
+
+
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% Now begins the stuff that I added.
+% ----------------------------------
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\large\bf}
+\subsectionfont{\rmfamily\mdseries\normalsize\itshape}
+
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+% Make parskips rather than indent with lists.
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+% Use fontawesome. Note: you'll need TeXLive 2015. Update.
+\usepackage{fontawesome}
+
+% Fancyhdr, as I tend to do with these personal documents.
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{
+\cfoot{\scriptsize  Trenton Pulsipher - Trenton Pulsipher }}
+\rfoot{\scriptsize \thepage/{\hypersetup{linkcolor=black}\pageref{LastPage}}}
+
+% Always load hyperref last.
+\usepackage{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+
+\hypersetup{unicode=true,
+            pdftitle={Trenton Pulsipher:  Trenton Pulsipher (Curriculum Vitae)},
+            pdfauthor={Trenton Pulsipher},
+            pdfkeywords={R Markdown, resume, template},
+            colorlinks=true,
+            linkcolor=blue,
+            citecolor=Blue,
+            urlcolor=blue,
+            breaklinks=true, bookmarks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+\begin{document}
+
+
+\centerline{\huge \bf Trenton Pulsipher}
+
+\vspace{2 mm}
+
+\hrule
+
+\vspace{2 mm}
+
+\moveleft.5\hoffset\centerline{Sr Data Scientist, Henry Schein One}
+\moveleft.5\hoffset\centerline{Henry Schein One, 1220 S 630 E, American Fork, UT 84003}
+\moveleft.5\hoffset\centerline{ \faEnvelopeO \hspace{1 mm} \href{mailto:}{\tt \href{mailto:tcpulsipher@hotmail.com}{\nolinkurl{tcpulsipher@hotmail.com}}} \hspace{1 mm}  \faPhone \hspace{1 mm}  801 380 6878  \hspace{1 mm}  \faGithub \hspace{1 mm} \href{http://github.com/trentonpulsipher}{\tt trentonpulsipher} \hspace{1 mm}    \faGlobe \hspace{1 mm} \href{http://\url{https://www.linkedin.com/in/tcpulsipher/}}{\tt \url{https://www.linkedin.com/in/tcpulsipher/}}   }
+
+\vspace{2 mm}
+
+\hrule
+
+
+\subsection{Skills}\label{skills}
+
+Machine Learning \textbar{} Data Mining \textbar{} Visualization
+\textbar{} Statistics \textbar{} Big Data \textbar{} R \textbar{}
+Tableau \textbar{} SQL
+
+\subsection{Employment}\label{employment}
+
+\subparagraph{Henry Schein One}\label{henry-schein-one}
+
+\emph{Sr Data Scientist} (American Fork, UT) \hfill Apr 2017 - Present
+
+I lead the data science effort at HS One, including being the primary
+promoter of data governance, business process and data warehouse
+documentation, and analytical best practices.
+
+With the help of interns that I mentor/manage, we built a robust machine
+learning predictive modeling and reporting framework to speed delivery
+of our data science project deliverables. Using machine learning
+algoritms we identified customers at-risk of attrition (saving nearly
+\$10M in 3 years) and improved marketing messaging and sales lead
+generation through enhanced customer segmentation.
+
+We created web-based tools to share analytical results with the sales,
+customer success, and marketing teams internally. Such tools were built
+from scratch in Linux to share interactive JavaScript based apps via
+HTML pages in a Markdown/Hugo generated website using R as the general
+engine.
+
+I also support the business operations team's effort to improve the data
+warehouse architecture, dimensional modeling, and reporting services
+(Salesforce and Tableau).
+
+\subparagraph{Category Partners}\label{category-partners}
+
+\emph{Sr Analyst} (Idaho Falls, ID) \hfill Apr 2016 - Apr 2017
+
+As the senior analyst of a five person startup I led the analysis,
+visualization/dashboard efforts of IRI/Nielsen syndicated data for
+grower/shipper clients in the produce category.
+
+\subparagraph{The Church of Jesus Christ of Latter-day
+Saints}\label{the-church-of-jesus-christ-of-latter-day-saints}
+
+\emph{Data Analyst / Statistician} (Salt Lake City, UT) \hfill Dec 2014
+- Apr 2016
+
+As a data analyst in the Missionary Department I was responsible for all
+data science related analytical efforts within the department,
+including: data wrangling, modeling, predictive analytics,
+visualization, data discovery/exploration, and communication of results
+to the highest level of leaders/executives in the Church. I established
+knowledge sharing of advanced analytics best practices.
+
+\subparagraph{Pacific Northwest National
+Laboratory}\label{pacific-northwest-national-laboratory}
+
+\emph{Statistician} (Richland, WA) \hfill Jul 2009 - Dec 2014
+
+Implemented Bayesian model averaging (BMA) as an ensemble-based machine
+learning method to incorporate predictions from multiple experts or
+model systems. Successful application of BMA include modeling of
+response surfaces numerically generated from multiple expert-derived 3D
+conceptual models characterizing sites for carbon sequestration, and
+have improved predictive performance for ensemble-based applications in
+image classification (computer vision), power grid demand modeling, pKa
+protein analysis, and sensor degradation signature discovery. Coauthored
+multiple peer-reviewed journal articles and conference papers
+demonstrating expertise in BMA related applications. Contributed to the
+development of three invention disclosures and one non-provisional
+patent submission (pub number: 2013/0297,538).
+
+Developed statistical methodology to spatially allocate weather similar
+regions using climate data. Reduction of the number of weather similar
+regions and of the number of building types will save climate modelers
+and power grid researchers at least hundreds of hours of computation and
+analysis time when using PNNL's complex regional earth systems
+simulation modeling framework, PRIMA. Formed a two-tiered PAM clustering
+approach to adequately describe a subset of representative building
+types. Managed Big Data and parallelized statistical computations using
+datadr and Rhipe, R packages designed to interact with the Hadoop
+framework via Map/Reduce on PNNL's institutional supercomputer and a
+Hadoop cluster.
+
+Performed multiple complex data analyses for other project work related
+to a variety of areas, including: building energy modeling, power grid
+modeling, bio-forensics of biowarfare growth media, river salmon
+population studies, air chemical analysis, uncertainty quantification
+for visualization of carbon sequestration, and several early drug
+development clinical trial related analyses.
+
+\subparagraph{Massachusetts General
+Hospital}\label{massachusetts-general-hospital}
+
+\emph{Biostatistician} (Boston, MA) \hfill Jun 2007 - Jul 2009
+
+Tested models for early detection of ovarian cancer in clinical trial
+data. Examined longitudinal protein biomarker profiles from blood/serum.
+Calculated sensitivity and specificity for predicted data from logistic
+regression of potential biomarker combinations from cancer case/control
+studies.
+
+\subsection{Education}\label{education}
+
+\emph{Brigham Young University}, MS Statistics \hfill 2007
+
+\emph{Brigham Young University}, BS Statistics \hfill 2005
+
+\subsection{Publications}\label{publications}
+
+\paragraph{Journal Articles}\label{journal-articles}
+
+Hejazi MI, Voisin N, Lui L, Bramer LM, Fortin DC, Hathaway JE, Huang M,
+Leung LR, Li HY, Patel PL, \textbf{Pulsipher TC}, Rice JS, Tesfa TK,
+Vernon CR, Zhou Y. 2015. ``21st century United States emissions
+mitigation could increase water stress more than the climate change it
+is mitigating.'' \emph{Proc Natl Acad Sci USA} 112(34):10635-40.
+
+Gosink LJ, Bensema K, \textbf{Pulsipher TC}, Obermaier H, Henry MJ,
+Childs H, Joy K. 2013. ``Characterizing and Visualizing Predictive
+Uncertainty in Numerical Ensembles Through Bayesian Model Averaging.''
+\emph{IEEE Transactions on Visualization and Computer Graphics}
+19(12):2703-2712
+
+Gosink LJ, Hogan EA, \textbf{Pulsipher TC}. 2013. ``Bayesian Model
+Aggregation for Ensemble-Based Estimates of Protein pKa Values.''
+\emph{Proteins: Structure, Function, Bioinformatics} 82(3):354-363
+
+Vlachopoulou M, Gosink LJ, \textbf{Pulsipher TC}, Ferryman T, Zhou N,
+Tong J. 2013. ``An Ensemble Approach for Forecasting Net Interchange
+Schedule.'' \emph{Power and Energy Society (PES) General Meeting 2013
+IEEE}
+
+Stephan CN, Amidan B, Trease H, Guyomarc'h P, \textbf{Pulsipher TC},
+Byrd JE. 2013. ``Morphometric Comparison of Clavicle Outlines from 3D
+Bone Scans and 2D Chest Radiographs: A Shortlisting Tool to Assist
+Radiographic Identification of Human Skeletons.'' \emph{Journal of
+Forensic Sciences} 59(2):306-313
+
+Nackos AN, Truong TV, \textbf{Pulsipher TC}, Kimball JA, Tolley HD,
+Robison RA, Bartholomew CH, Lee ML. 2011. ``One-step conversion of
+dipicolinic acid to its dimethyl ester using monomethyl sulfate salts
+for GC-MS detection of bacterial endospores.'' \emph{Anal. Methods}
+2011(3):243-258
+
+Yurkovetsky Z, Skates SJ, Lomakin A, Nolen B, \textbf{Pulsipher TC},
+Modugno F, Marks J, Godwin A, Gorelik E, Jacobs I, Menon U, Lu K,
+Badgwell D, Bast Jr RC, Lokshin AE. 2010. ``Development of a Multimarker
+Assay for Early Detection of Ovarian Cancer.'' \emph{Journal of Clinical
+Oncology} 28(13):2159-2166
+
+Addona TA, Abbatiello SE, Schilling B, Skates SJ, Mani DR, Bunk DM,
+Spiegelman CH, Zimmerman LJ, Ham AL, Keshishian H, Hall SC, Allen S,
+Blackman RK, Borchers CH, Buck C, Cardasis HL, Cusack MP, Dodder NG,
+Gibson BW, Held JM, Hiltke T, Jackson A, Johansen EB, Kinsinger CR, Li
+J, Mesri M, Neubert TA, Niles RK, \textbf{Pulsipher TC}, Ransohoff D,
+Rodriguez H, Rudnick PA, Smith D, Tabb DL, Tegeler TJ, Variyath AM,
+Vega-Montoto LJ, Wahlander A, Waldemarson S, Wang M, Whiteaker JR, Zhao
+L, Anderson NL, Fisher SJ, Liebler DC, Paulovich AG, Regnier FE, Tempst,
+Carr SA. 2009. ``Multi-site assessment of the precision and
+reproducibility of multiple reaction monitoring-based measurements of
+proteins in plasma.'' \emph{Nature Biotechnology} 27:633-641
+
+\paragraph{Other Publications}\label{other-publications}
+
+Baker NA, Dowling C, Gosink L, \textbf{Pulsipher TC}, Sansone SA. 2014.
+``Informatics Approaches to Data Preservation and Analysis in Protein
+Electrostatics.'' \emph{Biophysical} 108-2(369A)
+
+\subsection{Awards}\label{awards}
+
+\paragraph{R\&D 100 Award}\label{rd-100-award}
+
+2015 R\&D Magazine. ``Power Model Integrator: A system for more accurate
+energy forecasts.''
+
+\paragraph{Patent}\label{patent}
+
+``System and Method of Designing Models in a Feedback Loop.'' Patent
+issuer and numberus 13/869,290
+
+\end{document}
