@@ -80,7 +80,7 @@ Tested models for early detection of ovarian cancer in clinical trial data. Exam
 
 ## Publications
 
-#### Journal Articles
+### Journal Articles
 
 Hejazi MI, Voisin N, Lui L, Bramer LM, Fortin DC, Hathaway JE, Huang M, Leung LR, Li HY, Patel PL, **Pulsipher TC**, Rice JS, Tesfa TK, Vernon CR, Zhou Y. 2015. "21st century United States emissions mitigation could increase water stress more than the climate change it is mitigating." *Proc Natl Acad Sci USA* 112(34):10635-40.
 
@@ -98,7 +98,7 @@ Yurkovetsky Z, Skates SJ, Lomakin A, Nolen B, **Pulsipher TC**, Modugno F, Marks
 
 Addona TA, Abbatiello SE, Schilling B, Skates SJ, Mani DR, Bunk DM, Spiegelman CH, Zimmerman LJ, Ham AL, Keshishian H, Hall SC, Allen S, Blackman RK, Borchers CH, Buck C, Cardasis HL, Cusack MP, Dodder NG, Gibson BW, Held JM, Hiltke T, Jackson A, Johansen EB, Kinsinger CR, Li J, Mesri M, Neubert TA, Niles RK, **Pulsipher TC**, Ransohoff D, Rodriguez H, Rudnick PA, Smith D, Tabb DL, Tegeler TJ, Variyath AM, Vega-Montoto LJ, Wahlander A, Waldemarson S, Wang M, Whiteaker JR, Zhao L, Anderson NL, Fisher SJ, Liebler DC, Paulovich AG, Regnier FE, Tempst, Carr SA. 2009. "Multi-site assessment of the precision and reproducibility of multiple reaction monitoring-based measurements of proteins in plasma." *Nature Biotechnology* 27:633-641
 
-#### Other Publications
+### Other Publications
 
 Baker NA, Dowling C, Gosink L, **Pulsipher TC**, Sansone SA. 2014. "Informatics Approaches to Data Preservation and Analysis in Protein Electrostatics." *Biophysical* 108-2(369A)
 
